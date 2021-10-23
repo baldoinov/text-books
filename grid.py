@@ -13,26 +13,26 @@ def do_four(f):
     do_twice(f)
     do_twice(f)
 
-def start_middle():
+def middle():
     print('|        ', end=' ')
     
-def start_header():
+def header():
     print('+ - - - -', end=' ')
 
 def print_header():
-    start_header()
+    do_twice(header)
     print('+', end=' ')
+    print()
 
 def print_middle():
-    start_middle()
-    print('+', end=' ')
+    do_twice(middle)
+    print('|', end=' ')
+    print()
 
-def one_four_one(one, four, hone):
-    one()
-    do_four(four)
-    hone()
-    
 def print_grid():
-    one_four_one(print_header, print_middle, print_header)
+    print_header()
+    do_four(print_middle)
+    
+do_twice(print_grid)
+print_header()
 
-print_grid()
