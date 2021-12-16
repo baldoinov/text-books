@@ -3,7 +3,7 @@ import math
 
 
 def move(t, lenght):
-    """Move Turtle without forward without leaving a trail.
+    """Move Turtle forward without leaving a trail.
     Leaves the pen down.
     """
 
