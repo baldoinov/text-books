@@ -43,7 +43,7 @@ def diagonal_back_in_place(t, lenght, angle):
     t.fd(lenght)
     t.lt(180)
     t.fd(lenght)
-    if (angle >= 0) and (angle <= 180):
+    if 0 <= angle <= 180:
         t.lt((2 * (180 - angle) + angle))
     elif (angle > 180):
         t.rt(angle - 180)
