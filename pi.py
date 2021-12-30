@@ -19,8 +19,6 @@ def estimate_pi():
 
 def fatorial(n):
 
-    k = None
-
     if n <= 0:
         return 1
     else:
