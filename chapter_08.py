@@ -90,3 +90,4 @@ def is_reverse(w1, w2):
 # print(count_1("Vitor Baldoino", "V"))
 # print(count_1("Vitor Baldoino", "o"))
 # print(is_reverse('stop', 'pots'))
+# print('banana'.count('a'))
