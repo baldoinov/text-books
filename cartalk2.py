@@ -18,3 +18,26 @@ Write a Python program that tests all the six-digit numbers and prints any numbe
 that satisfy these requirements.
 """
 
+# String slicing has the following form: string[start_index[:end_index[:step]]].
+# So, if you do the following: string[0:5:1], you are slicing the string from
+# the 0-th character to the 4-th character by character.
+
+# If you try this: string[::-1], you are slicing the whole string from its last
+# character to its first, which means you're reversing the string.
+
+def palindrome(word):
+    return word == word[::-1]
+
+
+palindrome_numbers = []
+counter = 0
+
+for num in range(100000, 1000000):
+
+    if palindrome(str(num)):
+        counter += 1
+        palindrome_numbers.append(num)
+
+print(f"\nThere are {counter} six-digits numbers that are palindromes."
+      f"\nThe numbers are:"
+      f"\n{palindrome_numbers}")

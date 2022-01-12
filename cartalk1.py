@@ -46,5 +46,3 @@ for line in fin:
 print(f"\nThere are {word_count} words that have three consecutive letters."
       f"\nThe words are:"
       f"\n{words_consecutive}")
-
-
