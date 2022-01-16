@@ -19,10 +19,11 @@ def find_interlock(word_list: list, word: str) -> bool:
 
     return in_bisect_loop(word_list, even) and in_bisect_loop(word_list, odd)
 
+
 if __name__ == '__main__':
-    
+
     word_list = make_wordlist()
-    
+
     for word in word_list:
         
         if find_interlock(word_list, word):
