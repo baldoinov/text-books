@@ -1,4 +1,19 @@
-def rotate_word(word, t):
+"""
+A Caesar cypher is a weak form of encryption that involves “rotating” each letter 
+by a fixed number of places. To rotate a letter means to shift it through the 
+alphabet, wrapping around to the beginning if necessary, so 'A' rotated by 3 is 'D'
+and 'Z' rotated by 1 is 'A'.
+
+Write a function called rotate_word that takes a string and an integer as parameters, 
+and returns a new string that contains the letters from the original string rotated 
+by the given amount.
+
+You might want to use the built-in function ord, which converts a character to a numeric 
+code, and chr, which converts numeric codes to characters. Letters of the alphabet are 
+encoded in alphabetical order.
+"""
+
+def rotate_word1(word, t):
     new_word = ''
     num_sequence = []
     
@@ -10,7 +25,7 @@ def rotate_word(word, t):
     
     return new_word
 
-def rotate_word2(word, t):
+def rotate_word(word, t):
 
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     len_alph = len(alphabet)
@@ -29,9 +44,9 @@ def rotate_word2(word, t):
     return new_word
 
 
-encoded = rotate_word('zelia', 3)
-encoded2 = rotate_word2('zelia', 3)
-print(encoded)
-print(encoded2)
+if __name__ == '__main__':
 
-
+    encoded = rotate_word1('zelia', 3)
+    encoded2 = rotate_word('zelia', 3)
+    print(encoded)
+    print(encoded2)

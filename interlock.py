@@ -15,7 +15,7 @@ def find_interlock(word_list: list, word: str) -> bool:
     """
 
     even = word[::2]
-    odd = word[1:2]
+    odd = word[1::2]
 
     return in_bisect_loop(word_list, even) and in_bisect_loop(word_list, odd)
 
