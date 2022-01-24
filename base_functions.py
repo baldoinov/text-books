@@ -129,5 +129,33 @@ def make_histogram(s: str or list) -> dict:
     return d
 
 
+def single(word: str) -> str:
+    """Sorts the letters of a word and return it as a string to create an
+    unique key in a dictionary.
+    """
+
+    s = sorted(list(word))
+    return ''.join(s)
+
+
+def find_anagrams(word_list: list) -> dict:
+    """Finds all anagrams in a word list and returns it in a dictionary
+    with the letters as a key.
+    """
+    
+    d = dict()
+
+    for word in word_list:
+        
+        unique_key = single(word)
+        
+        if unique_key in d:
+            d[unique_key].append(word)
+        else:
+            d[unique_key] = [word]
+
+    return d
+
+
 if __name__ == '__main__':
     pass
