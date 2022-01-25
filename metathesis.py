@@ -14,6 +14,7 @@ pairs of words, and don't test all possible swaps.
 from base_functions import make_wordlist, find_anagrams
 from itertools import combinations
 
+
 def letters_swap(word1: str, word2: str) -> bool:
     """Returns True if two words have only two letters swapped.
     """

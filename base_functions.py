@@ -157,5 +157,16 @@ def find_anagrams(word_list: list) -> dict:
     return d
 
 
+def checks_anagrams(word: str, word_seq: dict) -> bool:
+    """Checks if the given word has any anagrams in the word list."""
+
+    s = ''.join(sorted(word))
+
+    if s in word_seq:
+        return True
+    
+    return False
+
+
 if __name__ == '__main__':
     pass
