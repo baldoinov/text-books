@@ -3,7 +3,7 @@
 
 import random
 from typing import Tuple
-from chapter_13 import readbook
+from analyze_book import readbook
 
 def choose_from_hist(hist: dict) -> Tuple[str, float]:
     """Takes a histogram and chooses its keys with probability in proportion to frequency.

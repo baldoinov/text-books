@@ -2,9 +2,10 @@
 import string
 from base_functions import make_wordlist
 
-
-# Write a program that reads a file, breaks each line into words, strips whitespace and 
-# punctuation from the words, and converts them to lowercase.
+"""
+Write a program that reads a file, breaks each line into words, strips whitespace and 
+punctuation from the words, and converts them to lowercase.
+"""
 
 def readfile():
 
@@ -24,17 +25,19 @@ def readfile():
     
     print(listwords)
 
-# Go to Project Gutenberg (http://gutenberg.org) and download your favorite out-of-copyright 
-# book in plain text format. 
+"""
+Go to Project Gutenberg (http://gutenberg.org) and download your favorite out-of-copyright 
+book in plain text format. 
 
-# Modify your program from the previous exercise to read the book you downloaded, skip over the 
-# header information at the beginning of the file, and process the rest of the words as before.
+Modify your program from the previous exercise to read the book you downloaded, skip over the 
+header information at the beginning of the file, and process the rest of the words as before.
 
-# Then modify the program to count the total number of words in the book, and the number of times 
-# each word is used.
+Then modify the program to count the total number of words in the book, and the number of times 
+each word is used.
 
-# Print the number of different words used in the book. Compare different books by different authors, 
-# written in different eras. Which author uses the most extensive vocabulary?
+Print the number of different words used in the book. Compare different books by different authors, 
+written in different eras. Which author uses the most extensive vocabulary?
+"""
 
 def process_line(line: str) -> list:
     """Removes punctuation, hyphens and withespaces from lines.
@@ -93,11 +96,12 @@ def most_frequent(hist: dict) -> None:
 
     return t
 
-
-# Modify the previous program to read a word list (see Section 9.1) and then print all 
-# the words in the book that are not in the word list. How many of them are typos? 
-# How many of them are common words that should be in the word list, and how many of 
-# them are really obscure?
+"""
+Modify the previous program to read a word list (see Section 9.1) and then print all 
+the words in the book that are not in the word list. How many of them are typos? 
+How many of them are common words that should be in the word list, and how many of 
+them are really obscure?
+"""
 
 def comparebook():
 
@@ -125,7 +129,7 @@ if __name__ == '__main__':
     # for i in range(20):
     #     print(frequency[i])
     
-
+    
     # compare = comparebook()
     # freq = most_frequent(compare)
     # for i in freq:

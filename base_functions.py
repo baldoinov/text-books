@@ -2,6 +2,8 @@
 This script aggregates all the most used functions in the book.
 """
 
+import string
+
 def make_wordlist() -> list:
     """Creates a word list."""
 
@@ -166,6 +168,21 @@ def checks_anagrams(word: str, word_seq: dict) -> bool:
         return True
     
     return False
+
+
+def process_line(line: str) -> list:
+    """Removes punctuation, hyphens and withespaces from lines.
+    """
+
+    removables = string.punctuation + '“' + '”' + "‘" + "’"
+    mytable = "".maketrans({str(i): "" for i in removables})
+
+    line = line.replace("-", " ")
+    line = line.replace("—", " ")
+    line = line.strip(string.whitespace)
+    line = line.translate(mytable).lower()
+    
+    return line.split()
 
 
 if __name__ == '__main__':
