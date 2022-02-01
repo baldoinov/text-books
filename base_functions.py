@@ -4,10 +4,10 @@ This script aggregates all the most used functions in the book.
 
 import string
 
-def make_wordlist() -> list:
+def make_wordlist(file) -> list:
     """Creates a word list."""
 
-    fin = open('think-python-2e-exercises/words.txt')
+    fin = open(file, 'r', encoding='utf-8')
 
     word_list = []
     

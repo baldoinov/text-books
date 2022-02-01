@@ -54,7 +54,7 @@ def process_line(line: str) -> list:
     return line.split()
 
 
-def skip_header(file: open) -> None:
+def skip_header(file) -> None:
 
     for line in file:
         
@@ -84,8 +84,8 @@ def readbook() -> dict:
     return hist
 
 
-def most_frequent(hist: dict) -> None:
-    """Takes a dict and prints the first 20 keys in decreasing order of frequency."""
+def most_frequent(hist: dict) -> list:
+    """Takes a dict and builds a list in decreasing order of frequency."""
 
     t = []
     
