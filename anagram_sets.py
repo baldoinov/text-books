@@ -40,5 +40,6 @@ def print_anagrams(d: dict) -> None:
         print(i)
 
 
-word_list = make_wordlist()
-print_anagrams(find_anagrams(word_list))
+if __name__ == '__main__':
+    word_list = make_wordlist()
+    print_anagrams(find_anagrams(word_list))

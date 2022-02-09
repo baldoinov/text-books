@@ -3,6 +3,7 @@ This script aggregates all the most used functions in the book.
 """
 
 import string
+import shelve
 
 def make_wordlist(file) -> list:
     """Creates a word list."""
@@ -158,6 +159,27 @@ def find_anagrams(word_list: list) -> dict:
 
     return d
 
+
+def store_anagrams(dictionary: dict, db_name: str) -> None:
+    """should store the anagram dictionary in a 'shelf'. used in the program anagram_db.py"""
+    
+    with shelve.open(db_name, 'c') as db:
+        
+        for key, values in dictionary.items():
+
+            db[key] = values
+
+
+def read_anagrams(db_name: str, key: str) -> list:
+    """should look up a word and return a list of its anagrams. used in the program anagram_db.py"""
+    
+    try: 
+
+        with shelve.open(db_name) as db:
+            return db[key]
+    
+    except KeyError:
+        return []
 
 def checks_anagrams(word: str, word_seq: dict) -> bool:
     """Checks if the given word has any anagrams in the word list."""
