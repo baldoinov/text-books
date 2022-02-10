@@ -120,7 +120,7 @@ def has_duplicates(s:list) -> dict:
     return False
 
 
-def make_histogram(s: str or list) -> dict:
+def make_histogram(s: list) -> dict:
     """Takes a string or a list, finds its elements frequency and returns a dictionary with
     element-frequency as key-value pairs.
     """
