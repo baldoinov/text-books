@@ -6,15 +6,16 @@ import copy
 
 class Point:
     """Represents a point in 2-D space."""
-    pass
 
-def distance_between_points(a, b):
 
-   x_square = abs(a.x - b.x) ** 2
-   y_square = abs(a.y - b.y) ** 2
-   distance = (x_square + y_square) ** (1/2)
+def distance_between_points(a: Point, b: Point) -> float:
+    """Takes two points and computes the distance between them."""
+    
+    x_square = abs(a.x - b.x) ** 2
+    y_square = abs(a.y - b.y) ** 2
+    distance = (x_square + y_square) ** (1/2)
 
-   return distance
+    return distance
 
 # 2º) As an exercise, write a function named move_rectangle that takes a Rectangle and two 
 # numbers named dx and dy. It should change the location of the rectangle by adding dx 
@@ -27,7 +28,7 @@ class Rectangle:
 
     obs: corner is a Point object
     """
-    pass
+
 
 def move_rectangle(rect, dx, dy):
     
@@ -49,11 +50,11 @@ def new_move_rectangle(rect, dx, dy):
 if __name__ == '__main__':
     
     # 1º)
-    # a = Point()
-    # b = Point()
-    # a.x, a.y = 4, 3
-    # b.x, b.y = 8, 9
-    # print(distance_between_points(a, b))
+    a = Point()
+    b = Point()
+    a.x, a.y = 4, 3
+    b.x, b.y = 8, 9
+    print(distance_between_points(a, b))
 
     # 2º)
     rect = Rectangle()
@@ -62,6 +63,3 @@ if __name__ == '__main__':
     move_rectangle(rect, dx=10, dy=20)
     print(f"The new location is {rect.corner.x, rect.corner.y}")
     
-
-
-    pass

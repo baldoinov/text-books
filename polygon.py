@@ -15,13 +15,15 @@ def polyline(t, n, lenght, angle):
         t.lt(angle)
 
 
-def polygon(t, lenght, n):
+def polygon(t: turtle.Turtle, lenght: float, n: int) -> None:
+    """Takes a turtle and draws a polygon with n side with the given lenght."""
     
     angle = 360 / n
     polyline(t, n, lenght, angle)
 
 
-def circle(t, r):
+def d_circle(t: turtle.Turtle, r: float) -> None:
+    """Takes a Turtle and a radius and draws a circle."""
     
     arc(t, r, 360)
 
@@ -35,8 +37,9 @@ def arc(t, r, angle):
 
     polyline(t, n, step_lenght, step_angle)
 
+if __name__ == '__main__':
+    
+    bob = turtle.Turtle()
+    arc(bob, 50, 60)
 
-bob = turtle.Turtle()
-arc(bob, 50, 60)
-
-turtle.mainloop()
+    turtle.mainloop()
