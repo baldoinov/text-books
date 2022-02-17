@@ -4,9 +4,11 @@
 
 In each folder you'll find a structure similar to this:
 
+```
 📦book-name
  ┣ 📂code → This is where I'll keep the code produced in exercises and during the reading.
  ┗ 📜NOTES.md → This will be the standard file name for my notes.
+```
 
 > There may be another random files inside the `book-name` folder and they're probably related to some misuse of the cwd in the exercises.
 
