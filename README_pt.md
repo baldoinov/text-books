@@ -1,14 +1,11 @@
 # Leituras - Programação/Dados/Ciência da Computação
 
-
+<p>
 <table align="right">
  <tr><td><a href="README.md"><img src="images/us-flag.png" height="13"> English</a></td></tr>
  <tr><td><a href="README_pt.md"><img src="images/br-flag.png" height="13"> Português</a></td></tr>
  </table>
-
-<br>
-<br>
-<br>
+<\p>
 
 :wave: Olá! Eu criei esse repositório para guardar todas as anotações, exercícios e código produzido durante as minhas seseões de estudo relacionadas a ciência da computação.
 
