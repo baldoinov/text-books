@@ -2,12 +2,6 @@
 
 :wave: Hi, there! I've created this repository to be a place holder for all notes, exercises and code produced throughout my study sessions of computer science related stuff.
 
-<table align="right">
- <tr><td><a href="README.md"><img src="images/us-flag.png" height="13"> English</a></td></tr>
- <tr><td><a href="README_pt.md"><img src="images/br-flag.png" height="13"> Português</a></td></tr>
-</table>
-
-
 In each folder you'll find a structure similar to this:
 
 ```
