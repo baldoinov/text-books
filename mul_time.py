@@ -22,7 +22,9 @@ def pace_calc(finish_t: Time, dist: float) -> float:
     """Takes a Time object representing the finishing time of a race and its 
     distance and returns the average pace.
     """
-
+    
+    #TODO: Arrumar o retorno dessa função. 
+    
     pace = mul_time(finish_t, (1 / dist))
     return pace
 

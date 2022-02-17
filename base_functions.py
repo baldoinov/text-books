@@ -206,6 +206,11 @@ def process_line(line: str) -> list:
     
     return line.split()
 
+def print_attributes(obj): 
+    """Gets an object and prints its attributes."""
+    for attr in vars(obj ): 
+        
+        print(attr, getattr(obj, attr))
 
 if __name__ == '__main__':
     pass
