@@ -1,12 +1,12 @@
 # Leituras - Programação/Dados/Ciência da Computação
 
-:wave: Olá! Eu criei esse repositório para guardar todas as anotações, exercícios e código produzido durante as minhas seseões de estudo relacionadas a ciência da computação.
 
 <table align="right">
  <tr><td><a href="README.md"><img src="images/us-flag.png" height="13"> English</a></td></tr>
  <tr><td><a href="README_pt.md"><img src="images/br-flag.png" height="13"> Português</a></td></tr>
-</table>
+ </table>
 
+:wave: Olá! Eu criei esse repositório para guardar todas as anotações, exercícios e código produzido durante as minhas seseões de estudo relacionadas a ciência da computação.
 
 Em cada pasta, você vai achar uma estrutura similar a essa:
 
