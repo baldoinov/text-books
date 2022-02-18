@@ -10,7 +10,7 @@ In each folder you'll find a structure similar to this:
  ┗ 📜NOTES.md → This will be the standard file name for my notes.
 ```
 
-> There may be another random files inside the `book-name` folder and they're probably related to some misuse of the cwd in the exercises.
+> There may be other random files inside the `book-name` folder and they're probably related to some misuse of the cwd in the exercises.
 
 The books I've read to this moment are:
 
