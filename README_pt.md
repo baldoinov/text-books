@@ -1,6 +1,6 @@
 # Leituras - Programação/Dados/Ciência da Computação
 
-:wave: Olá! Eu criei esse repositório para guardar todas as anotações, exercícios e código produzido durante as minhas seseões de estudo relacionadas a ciência da computação.
+:wave: Olá! Eu criei esse repositório para guardar todas as anotações, exercícios e códigos produzidos durante as minhas sessões de estudo relacionadas à ciência da computação.
 
 Em cada pasta, você vai achar uma estrutura similar a essa:
 
@@ -10,7 +10,7 @@ Em cada pasta, você vai achar uma estrutura similar a essa:
  ┗ 📜NOTES.md → Todos os arquivos com esse nome vão ter as anotações que eu fiz durante a leitura.
 ```
 
-> Dentro da pasta `nome-do-livro` podem existir outros arquivos soltos. Eles provavelmente estão ali por algum erro na hora de usar o `cwd` no exercícios.
+> Dentro da pasta `nome-do-livro` podem existir outros arquivos soltos. Eles provavelmente estão ali por algum erro na hora de usar o `cwd` nos exercícios.
 
 Os livros que eu li até o momento são:
 
