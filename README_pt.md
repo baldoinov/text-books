@@ -19,4 +19,4 @@ Os livros que eu li até o momento são:
 3. *Em breve...*
 
 
-Bem-vindo à minha jornada de aprendizagem!
+Bem-vindo a minha jornada de aprendizagem!

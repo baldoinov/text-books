@@ -193,7 +193,7 @@
     - The `__init__` method is a special method that gets invoked when an object is instantiated.
     - The `__str__` method also is a special method that return a string representation of an object.
 - By convention, the first parameter of a method is called self. This happens because in object-oriented programming the objects are the *active agents*. *"A method invocation like `Time.print_time()` says 'Hey Time! Please print yourself.'"*
-- It is possible to modify the behavior of python operators writing special method such as `__add__` ($+$),`__lq__` ($<$), `__sub__` ($-$), `__mul__`($\times$), etc. This is called ***operator overloading***. 
+- It is possible to modify the behavior of python operators writing special method such as `__add__`, `__lq__`, `__sub__`, `__mul__`, etc. This is called ***operator overloading***. 
 - ***Type-based dispatch***: an operation that dispatches the computation to different methods based on the type of the arguments.
 - Functions that work with several types are called ***polymorphic***
 
