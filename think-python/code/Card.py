@@ -1,3 +1,4 @@
+from multiprocessing.sharedctypes import Value
 import random
 
 class Card:
@@ -15,13 +16,31 @@ class Card:
         return f"{Card.rank_names[self.rank]} of {Card.suit_names[self.suit]}"
     
     def __lt__(self, other) -> bool:
+        """Compares this card to other, first by suit, then rank.
+        
+        returns: boolean
+        """
+
         if self.suit < other.suit: return True
         if self.suit > other.suit: return False
 
         # If suits are the same we check the ranks
-        return self.rank < other.rank 
+        return self.rank < other.rank
+    
+    def __eq__(self, other) -> bool:
+        """Checks whether self and other have the same rank and suit.
+        
+        returns: boolean
+        """
+        return self.suit == other.suit and self.rank == other.rank
+
 
 class Deck:
+    """Represents a standard deck with 52 cards.
+    
+    attributes:
+        cards: list of Card objects
+    """
 
     def __init__(self) -> None:
         
@@ -35,30 +54,66 @@ class Deck:
     def __str__(self) -> str:
 
         res = [str(card) for card in self.cards]
-        return '\n'.join(res)
+        return '\t'.join(res)
     
-    def pop_card(self):
-        return self.cards.pop()
+    def pop_card(self, i=-1):
+        """Removes and returns a card from the deck.
+        i: index of the card to pop; by default, pops the last card.
+        """
+        return self.cards.pop(i)
+    
+    def remove_card(self, card):
+        """Removes a card from the deck or raises exception if it is not there.
+        
+        card: Card
+        """
+        self.cards.remove(card)
 
     def add_card(self, card):
+        """Adds a card to the Deck."""
         self.cards.append(card)
 
     def shuffle(self):
+        """Shuffles the cards in this deck."""
         random.shuffle(self.cards)
     
     def sort(self):
+        """Sorts the cards in ascending order."""
         self.cards.sort()
     
     def move_cards(self, other, num: int):
-        """Move cards from self to other. If called by a class that inherits from Deck,
-        other can be a Hand or a Deck.
+        """Moves the given number of cards from the deck into the Hand.
+        
+        hand: destination Hand object
+        num: integer number of cards to move
         """
         
         for i in range(num):
-            card = self.pop_card()
-            other.add_card(card)
+            other.add_card(self.pop_card())
+    
+    def deal_hands(self, n_hands: int, n_cards: int) -> list:
+        """Creates hands with the given number of cards and return them inside a list.
+        
+        n_hands: number of hands
+        n_cards: number of cards in each hand
+        """
+        
+        if n_hands * n_cards > len(self.cards):
+            raise ValueError("There's not enough cards in this Deck for this kind of game!")
+        
+        hands = []
+        
+        for i in range(n_hands):
+            h = Hand()    
+            self.move_cards(h, n_cards)
+
+            hands.append(h)
+        
+        return hands
+
 
 class Hand(Deck):
+    """Represents a hand of playing cards"""
 
     def __init__(self, label: str="") -> None:
         
@@ -68,12 +123,8 @@ class Hand(Deck):
 if __name__ == '__main__':
 
     d = Deck()
-    print(d)
-    print("\n\n\n")
-
     d.shuffle()
-    print(d)
-    print("\n\n\n")
+    hands = d.deal_hands(4, 5)
     
-    d.sort()
-    print(d)
+    for h in hands:
+        print(h, end='\n\n')

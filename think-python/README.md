@@ -200,3 +200,15 @@
 - One of the goals of object-oriented design is to make software more maintainable. ***"A design principle that helps achieve that goal is to keep interfaces separate from implementations."***
     - In practical terms, that means that a class method should not depend on how the attributes of that class are represented. That is, the `Time.print_time()` method defined above should be a ***polymorphic*** function and should work regardless of how the `Time` object attributes are represented.
     - This [answer](https://softwareengineering.stackexchange.com/questions/306402/if-class-is-to-define-attributes-and-methods-and-interface-is-to-define-a-set/306416) helped me think this through.
+
+## Chapter 18
+
+- Summary
+
+### More on Object-Oriented Programming
+
+- https://realpython.com/python3-object-oriented-programming/
+- https://www.w3resource.com/python-exercises/class-exercises/
+- https://pynative.com/python-object-oriented-programming-oop-exercise/
+- https://python-textbok.readthedocs.io/en/1.0/index.html
+- https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc

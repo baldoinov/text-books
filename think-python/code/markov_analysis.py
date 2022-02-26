@@ -66,6 +66,6 @@ def random_text(d: dict, n: int) -> str:
 
 if __name__ == '__main__':
 
-    d = markov('think-python-2e-exercises/great-expectations.txt')
+    d = markov('text-books/think-python/great-expectations.txt')
     text = random_text(d, 45)
     print(text)
