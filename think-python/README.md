@@ -203,12 +203,57 @@
 
 ## Chapter 18
 
-- Summary
+- *The language feature most often associated with object-oriented programming is inheritance.* ***Inheritance is the ability to define a new class that is a modified version of an existing class.***
+- Class attributes are associated with the class object, that is, every of that class will share the same attributes.
+   
+   ```python
+    class Card:
 
-### More on Object-Oriented Programming
+        suit_names = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
 
-- https://realpython.com/python3-object-oriented-programming/
-- https://www.w3resource.com/python-exercises/class-exercises/
-- https://pynative.com/python-object-oriented-programming-oop-exercise/
-- https://python-textbok.readthedocs.io/en/1.0/index.html
-- https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+        rank_names = [None, 'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
+
+        def __init__(self, suit, rank):
+            
+            self.suit = suit
+            self.rank = rank
+    ```
+    - But variables like `self.suit` and `self.rank` are instance attributes, which means they are associated with a particular instance.
+
+- Inheritance: the ability to define a new class that is a modified version of an existing class. In practical terms, this means you do the following:
+    
+    ```python 
+    class Hand(Deck):
+
+        def __init__(self, label=''):
+
+            self.cards = []
+            self.label = label
+
+    ```
+    - Doing so, you give the class `Hand` access to attributes and methods defined in the class `Deck`.
+    - The complete class definitions are written in the `Card.py` file, I suggest you give it a look :wink:.
+
+- ***Liskov substitution principle***: *when you override a method, the interface of the new method should be the same as the old. It should take the same parameters, return the same type, and obey the same preconditions and post conditions. If you follow this rule, you will find that any function designed to work with an instance of a parent class, like a Deck, will also work with instances of child classes like a `Hand` and `PokerHand`.*
+
+
+## Big-Oh Notation
+
+- I wrote the following part using a `LaTex` extension for VS Code and I believe GitHub Markdown will not be able to display it correctly. Sorry for that.
+
+- Exercises B.1
+    1. $O(n^3)$
+    2. $O(n^3)$
+    3. We would say $af + b$ is also in $O(g)$
+    4. They are in $O(g)$
+    5. They are in $O(max(g, h))$
+    6. They are in $O(f \times g)$
+
+- Exercises B.2
+    1. A comparison sort is a type of sorting algorithm that only compares two or three list elements at time to determines which of them should occur first in the final sorted list.
+    2. The worst-case and average complexity of bubble sort is $ O(n^2)$. According to [this page](https://en.wikipedia.org/wiki/Bubble_sort), even other $ O(n^2)$ sorting algorithms generally tun faster than bubble sort, and are no more complex.
+    3. In the worst-case performance, radix sort is $O(w \times n)$, where n is the number of items to be sorted, and w is the length of each item.
+    4. Stable sort algorithms sort equal elements in the same order that they appear in the input. In practice, this is important to preserver order over multiple sorts on the same input data.
+    5. [*The universally-acclaimed worst sorting algorithm is Bogosort, sometimes called Monkey Sort or Random Sort.*](https://www.baeldung.com/cs/worst-sorting-algorithms#:~:text=Bogosort&text=The%20universally%2Dacclaimed%20worst%20sorting,then%20it%20will%20eventually%20happen.)
+
+
