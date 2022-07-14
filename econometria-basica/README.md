@@ -4,7 +4,7 @@ Esse repositório contém as soluções de alguns dos exercícios aplicados do l
 
 ## Sumário
 
-1. I – Modelos de regressão com equação única
+1. Modelos de regressão com equação única
     - 1 - [A natureza da análise de regressão](econ_basic_ch_01.ipynb)
     - 2 - [Análise de regressão com duas variáveis: algumas ideias básicas](econ_basic_ch_02.ipynb)
     - 3 - [Modelo de regressão de duas variáveis: o problema da estimação](econ_basic_ch_03.ipynb)
