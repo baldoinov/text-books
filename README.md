@@ -14,8 +14,8 @@ In each folder you'll find a structure similar to this:
 
 The books I've read to this moment are:
 
-1. [Think Python: How to Think Like a Computer Scientist - Allen B. Downey](https://greenteapress.com/wp/think-python-2e/)
-2. Basic Econometrics - Damodar Gujarati and Dawn Porter
+1. [Think Python: How to Think Like a Computer Scientist - Allen B. Downey](/think-python/))
+2. [Basic Econometrics - Damodar Gujarati and Dawn Porter](/econometria-basica/)
 3. Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People - Aditya Y. Bhargava
 4. *More to come...*
 
