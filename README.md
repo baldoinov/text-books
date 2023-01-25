@@ -16,7 +16,7 @@ The books I've read to this moment are:
 
 1. [Think Python: How to Think Like a Computer Scientist - Allen B. Downey](/think-python/))
 2. [Basic Econometrics - Damodar Gujarati and Dawn Porter](/econometria-basica/)
-3. Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People - Aditya Y. Bhargava
+3. [(Statistics) Estatística Básica - Bussab e Morettin](/estatistica-basica/)
 4. *More to come...*
 
 
