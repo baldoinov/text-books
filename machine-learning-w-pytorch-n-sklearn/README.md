@@ -5,6 +5,9 @@ This repository contains the notes and exercises developed during the reading of
 ## Contents
 
 1. [Types of Learning and Simple Classifiers](/machine-learning-w-pytorch-n-sklearn/ch01_n_ch02_ml_w_pytorch_n_sklearn.ipynb)
-2. [Revision and PyTorch](/machine-learning-w-pytorch-n-sklearn/ch11_ch12_ch13_ml_w_pytorch_n_sklearn.ipynb)
-3. [The Transformer](/machine-learning-w-pytorch-n-sklearn/transformer-architecture.ipynb)
+2. [Tour of Classifiers](/ch03_ml_w_pytorch_n_sklearn.ipynb)
+   1. [Training & Visualizing a Decision Tree](/training-and-visualizing-a-decision-tree.ipynb)
+   2. [Predict Employee Turnover]()
+3. [Revision and PyTorch](/machine-learning-w-pytorch-n-sklearn/ch11_ch12_ch13_ml_w_pytorch_n_sklearn.ipynb)
+4. [Transformer](/machine-learning-w-pytorch-n-sklearn/transformer-architecture.ipynb)
 
